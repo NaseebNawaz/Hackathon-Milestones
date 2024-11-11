@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #e8effc;
+}
+
+/* Container Styling */
+.container, #resumePage {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid #c8d6e5;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Form and Input Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2f3542;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f1f2f6;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+    border-color: #1e90ff;
+    background-color: #eef7ff;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3742fa;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Image Styling */
+#resumePage img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 3px solid #576574;
+}
+
+/* Heading and Section Text Styling */
+#resumePage h1 {
+    text-align: center;
+    color: #3742fa;
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#resumePage h2 {
+    color: #2f3542;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.resume-content p {
+    color: #576574;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border-left: 4px solid #1e90ff;
+}
+
+/* Border and Section Background */
+.resume-content h2, .resume-content p {
+    padding: 10px;
+    background-color: #f7fbff;
+    border-radius: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container, #resumePage {
+        width: 95%;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 544px) {
+    .container, #resumePage {
+        width: 100%;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+        font-size: 14px;
+    }
+}
